@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+:root {
+    --color-primary: #53a0fa;
+    --color-boton: #e1f1ff;
+}
+body {
+    color: var(--color-primary);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.arriba {
+    background-color: var(--color-primary);
+    height: 250px;
+}
+.abajo {
+    background-color: #FFFFFF;
+    height: 50%;
+}
+.linea {
+    border: 1px solid #f6fbff;
+    width: 85%;
+    margin: auto;
+    margin-left: 20px;
+    padding: 1px 0;
+}
+.separacion {
+    border-right: 2px solid #f6fbff;
+}
+.formulario {
+    margin: auto;
+    margin-top: -150px;
+    width: 466px;
+    height: 304px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #000000;
+}
+.frm__modalidad, .frm__modalidad2, .frm__modalidad3 {
+    width: 33%;
+    height: 90%;
+    padding: 20px 20px;
+    text-align: center;
+}
+.frm__modalidad2 {
+    position: relative;
+    left: 33%;
+    top: -274px;
+}
+.frm__modalidad3 {
+    position: relative;
+    float: right;
+    top: -548px;
+}
+.frm__modalidad h3, .frm__modalidad2 h3, .frm__modalidad3 h3 {
+    color: #c4b9b2;
+    font-size: 10px;
+    padding: 20px;
+}
+.frm__modalidad small, .frm__modalidad p, .frm__modalidad2 small, .frm__modalidad2 p, .frm__modalidad3 small, .frm__modalidad3 p {
+    font-size: 8px;
+}
+.frm__modalidad p, .frm__modalidad2 p, .frm__modalidad3 p {
+    font-size: 20px;
+    padding: 20px;
+    color: #0050f9;
+}
+button {
+    width: 80px;
+    background-color: var(--color-boton);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-size: 9px;
+    font-weight: bold;
+}
+button:hover {
+    border:none;
+    border: 1px solid #FFFFFF;
+    background-color: #c4b9b2;
+    color: #FFFFFF;
+}
+.precio {
+    margin: -8px;
+}
+.free {
+    background-color: var(--color-primary);
+    color: var(--color-boton);
+}
