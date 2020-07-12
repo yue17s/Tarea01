@@ -1,21 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-top: 200px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 450px;
+      height: 300px;
+    }
+    .swiper-wrapper a {
+      text-decoration: none;
+    }
+    .swiper-wrapper span: hover {
+      background-color: aqua;
+    }
+    @media screen and (max-width: 500px) {
+     .swiper-container {
+        margin-top: 100px;
+        }
+    }
+  </style>
 </head>
+
 <body>
-    <main>
-        <section>
-            <h1>TAREA 1</h1>
-            <p>Renato Quispe</p>
-            <ul>
-                <li><a href="./01-apples.html" target="_blank">Tarea 1</a></li>
-                <li><a href="./02-free.html" target="_blank">Tarea 2</a></li>
-                <li><a href="./03-adidas.html" target="_blank">Tarea 3</a></li>
-            </ul>
-        </section>
-    </main>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="./02-Reto.html"><img src="./img/img-05.jpg"><span>Reto 02</span></a></div>
+      <div class="swiper-slide"><a href="./01-Reto.html"><img src="./img/img-04.jpg"><span>Reto 01</span></a></div>
+      <div class="swiper-slide"><a href="./03-adidas.html"><img src="./img/img-03.jpg"><span>Tarea 03</span></a></div>
+      <div class="swiper-slide"><a href="./02-free.html"><img src="./img/img-02.jpg"><span>Tarea 02</span></a></div>
+      <div class="swiper-slide"><a href="./01-apples.html"><img src="./img/img-01.jpg"><span>Tarea 01</span></a></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+        loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>

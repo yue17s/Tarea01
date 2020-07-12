@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+:root {
+    --color-primario: #5da5a4;
+    --color-oscuro: #273130;
+    --color-plomo: #ecf5f4;
+    --color-contorno: #f2f6f7;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f0fafb;
+}
+.menu {
+    width: 100%;
+    height: auto;
+    border: none;
+    overflow: hidden;
+}
+.menu img {
+    width: 100%;
+    background-color: var(--color-primario);
+}
+.listas {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+.lista {
+    display: flex;
+    flex: 1;
+    height: 150px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--color-primario) 0px 0px 20px;
+}
+.lista:hover .lista__seleccion {
+    background-color: var(--color-primario);
+    overflow: hidden;
+}
+.lista__seleccion{
+    width: 5px;
+}
+.lista__img {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lista__img img {
+    margin: 0 auto;
+}
+.lista__detalle {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+.lista__contenido {
+    display: flex;
+    
+}
+.lista__partes {
+    flex: 4;
+    display: flex;
+}
+ul {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+.btn1 {
+    background-color: var(--color-primario);
+}
+.btn2 {
+    background-color: var(--color-oscuro);
+}
+.btn3 {
+    background-color: var(--color-plomo);
+    color: var(--color-primario);
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+}
+.curso {
+    color: var(--color-primario);
+    font-weight: bold;
+    font-size: 18px;
+}
+h4 {
+    margin: 10px 0 10px 0;
+    font-size: 22px;
+}
+.duracion {
+    color: var(--color-primario);
+}
+i {
+    height: 4px;
+    width: 4px;
+    background-color: var(--color-primario);
+    color: var(--color-primario);
+    border: none;
+    border-radius: 50%;
+    margin: 0 15px 3px 15px;
+}
